@@ -1,0 +1,20 @@
+<ion-view title="Đăng nhập" hide-back-button="true" cache-view="false" id="page5" drag-content="false">
+  <ion-content padding="true" class="has-header">
+    <form id="NgNhP-form1" class="list" mehthod="POST" action="">
+      <ion-list id="NgNhP-list1">
+        <label class="item item-input" id="NgNhP-input1" name="email">
+          <span class="input-label">email</span>
+          <input type="text" placeholder="">
+        </label>
+        <label class="item item-input" id="NgNhP-input2" name="password">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="">
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <button ng-click="login()" id="NgNhP-button1" class="button button-calm  button-block"> Đăng nhập </button>
+<!--       <a ui-sref="tabsController.thNgK" id="NgNhP-button1" class="button button-calm  button-block">Đăng nhập</a> -->
+      <a ui-sref="NgK" id="NgNhP-button2" class="button button-positive  button-block button-clear">Tạo tài khoản mới ?</a>
+    </form>
+  </ion-content>
+</ion-view>

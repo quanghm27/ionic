@@ -1,0 +1,38 @@
+<ion-view title="Thanh Toán" id="page7">
+  <ion-content padding="true" class="has-header">
+    <form id="thanhToN-form3" class="list">
+
+      <div ng-controller="addProductCtrl">
+        <div ng-repeat="input in inputs">
+          <div class="row">
+            <div class = "col-50">
+              <input type="text" name="product_[{{$index}}]" placeholder="Nhập id sản phẩm" ng-model="input.value" />
+            </div>
+            <div class = "col-40">
+              <ion-toggle style="border-left: 1px solid; border:  none;" toggle-class="toggle-balanced" id="thanhToN-toggle7" name="scanCustomerrtId">Quét mã</ion-toggle>
+            </div>
+            <div class = "col-10">
+              <button style="display: block; width: 100%; height: 100% " class="button button-small button-balanced" ng-if="$index == inputs.length - 1" ng-click="addInput()">
+                <i class="icon ion-plus" " > Thêm  </i>
+              </button>
+              <button style="display: block; width: 100%; height: 100% " class="button button-small button-assertive" ng-if="$index != inputs.length - 1" ng-click="removeInput($index)">
+                <i class="icon ion-minus"> Xoá </i>
+              </button>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <div class="spacer" style="width: 300px; height: 52px;"></div>
+      <div class="list list-inset">
+        <div class="item-input" >
+          <label class="item-input-wrapper">
+            <input type="text" placeholder="Nhập mã khách">
+          </label>
+        </div>
+      </div>
+      <ion-toggle toggle-class="toggle-balanced" id="thanhToN-toggle7" name="scanCustomerrtId">Quét mã</ion-toggle>
+      <button id="thanhToN-button13" class="button button-positive  button-block">Tap me!</button>
+    </form>
+  </ion-content>
+</ion-view>
